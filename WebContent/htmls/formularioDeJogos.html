@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+	<link rel="shortcut icon" type="imagem/png" href="imagens/yinyang.png"/>
+	<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="page03.css">
+	<title>Pagina de cadastro de jogos</title>
+	
+</head>
+<body >
+
+<section  class="p1">
+  			<nav  class="p1">
+    			<ul  class="p1">
+    				<p  class="p1">Mais informacoes:</p>
+    				<a  class="p1" href="formulario.html">Formulario de Inscricao</a>
+    				<br><br><br>
+					<a  class="p1" href="formularioDeJogos.html">Formulario de Cadastro de jogos</a>
+					<br><br><br>
+					<a  class="p1" href="listaDeJogos.html">Lista de jogos</a><br>
+    			</ul>
+  			</nav>
+  		</section>
+	<h1>Pagina de cadastro de jogos</h1>
+	<form action="">
+		<fieldset>
+			<legend>Dados do Jogo </legend>
+			Codigo Do Jogo:<br>
+			<input type="text" title="Codigo do jogo"  name="cod" required="required">
+			<br>
+			Nome:<br>
+			<input type="text" title="Sobrenome"  name="nome" required="required">
+			<br>
+			Descricao:<br>
+			<textarea rows="6" cols="30" name="desc">Descricao do jogo</textarea>
+			<br>
+			Data de Lancamento:<br>
+			<input type="date" title="Data de Lancamento"  name="dtlan">
+			<br>
+			Classificacao de idade:
+			<br>
+			<input type="radio" name="gender1" value="Livre" checked> Livre para todas as idades  
+  			<input type="radio" name="gender2" value="10"> 10 anos
+  			<input type="radio" name="gender3" value="12"> 12 anos <br>
+  			 <input type="radio" name="gender4" value="14" checked> 14 anos
+  			<input type="radio" name="gender5" value="16"> 16 anos
+  			<input type="radio" name="gender6" value="18"> 18 anos
+  			<br><br>
+  			<input type="checkbox" name="op1" value="Acao">Acao
+  			<input type="checkbox" name="op2" value="Aventura">Aventura
+  			<input type="checkbox" name="op3" value="Short">Short/FPS/Tiro
+  			<input type="checkbox" name="op4" value="Arcade">Arcade
+  			<input type="checkbox" name="op5" value="RPG/MMO">RPG/MMO
+  			<input type="checkbox" name="op6" value="Race">Corrida
+  			<br>
+  			<br>
+			
+			<input type="submit" value="Sou um botao" />
+			<input type="reset"/>
+		</fieldset>
+	</form>
+	<br>Voutar a pagina Inicial:	
+	<a href="index.html">Voutar a pagina inicial</a>
+
+</body>
+</html>

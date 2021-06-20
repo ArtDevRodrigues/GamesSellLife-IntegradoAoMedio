@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<script type="text/javascript">
+		function mudar() {
+			if(document.getElementById('d').background=='imagens/f8.jpg'){
+				document.getElementById('d').background='imagens/f7.jpg';	
+				
+			}else{
+				document.getElementById('d').background='imagens/f8.jpg';	
+			}			
+		}
+		
+		
+		function mostrar(id) {
+			
+			var el = document.getElementById(id);
+			el.style.display = el.style.display == 'none' ? 'block': 'none';
+			
+		}
+		
+
+	</script>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Insert title here</title>
+	</head>
+	<body id="d" background="imagens/f8.jpg" style="background-size:100%;background-size: cover;
+	background-attachment:fixed;background-repeat: no-repeat;">
+
+		<button id="f" type="button" onclick="mudar()"  style = "font-family:serif;padding: 20px;" onmouseover="this.style.color='red';this.style.background='blue'"
+		onmouseout="this.style.color='black';this.style.background='white'" >
+		Mude o fundo</button>
+		<br>
+		<br>
+		<ul>
+			<li><a onclick="mostrar('i')" href="#"> Jubileu</a></li>
+			<span id="i" style="display:none">Nao existo</span>
+		</ul>
+		
+				
+		
+		
+		
+
+	</body>
+</html>

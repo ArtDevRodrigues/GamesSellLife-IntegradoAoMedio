@@ -1,0 +1,31 @@
+body{
+	background-image:url("imagens/f8.jpg") 
+	
+}
+h1{
+	color:white;
+	
+}
+input{
+	
+	background-color: #00FF00; 
+	
+}
+textarea {
+	background-color:  #00FF00; 
+}
+input:CHECKED {
+	color:blue;	
+}
+a.p1{
+	color:#f8f3fc;
+	
+}
+nav.p1 {
+    float: left;
+    width: 15%;
+    height:2000px; 
+    background-color:transparent;
+   
+    padding: 20px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<title>Games Sell Life</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="imagem/png" href="../yinyang.png"/>
+<link rel="stylesheet" href="../novocss.css">
+<link rel="stylesheet" href="..css/page4.css">
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:5}
+</style>
+<body style="background-image: url('../imagenssite/1.jpg');background-size: cover;
+	background-attachment:fixed;background-repeat: no-repeat; ">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
+		style="z-index: 3; width: 300px; font-weight: bold;" id="mySidebar">
+		<br> <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"style="width: 100%; font-size: 22px">Close Menu</a>
+		<div class="w3-container">
+			<h3 class="w3-padding-64"><b>Games Sell<br>Life	</b></h3>
+		</div>
+		<div class="w3-bar-block">
+			<a href="../index.html"onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pagina Inicial</a>
+			<!-- <a href="http://localhost:8080/priquisa/paginasExtras/Login.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Login</a> -->
+			<a href="LoginParaOCarrinho.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Carrinho</a>
+			<a href="LoginParaBiblioteca.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Biblioteca</a> 
+			<a href="InfoSite.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Informações Sobre o Site</a> 
+			<a href="Suporte.html" onclick="w3_close()"class="w3-bar-item w3-button w3-hover-white">Suporte ao Cliente</a>
+		</div>
+	</nav>
+
+<div class="w3-container" id="contact1" style="margin-top:75px;left: 20px">
+	 <h1 style="padding-left: 500px" ><b>Biblioteca De jogos</b></h1>
+	<TABLE BORDER=2 style="border-left-width: 300px;size: 20px;width: 100%;"> 
+				<thead>
+				<TR style="background-color: #708090;"> 
+					<td style="text-align: center;">Codigo</td>
+					<td style="text-align: center;">nome</td>
+					<td style="text-align: center;">Descricao</td>
+					<td style="text-align: center;">Data de Lancamento</td>
+					<td style="text-align: center;">Classificao de Idade</td>
+					<td style="text-align: center;">Preco</td>
+					
+				</tr>
+				</thead>
+					<TR style="background-color: #708090;"> 
+					<td id="cod" style="text-align: center;"><img></td>
+					<td id="no" style="text-align: center;"></td>
+					<td id="des" style="text-align: center;"></td>
+					<td id="dtl" style="text-align: center;"></td>
+					<td id="claid" style="text-align: center;"></td>
+					
+				</tr>
+				<script>	
+					document.getElementById("cod").innerHTML = "124";
+					document.getElementById("no").innerHTML = "GOD";
+					document.getElementById("des").innerHTML = "p";
+					document.getElementById("dtl").innerHTML = "Sat Apr 01 00:00:00 GMT-03:00 2000";
+					document.getElementById("claid").innerHTML = "18"
+				</script>
+				
+				<tfoot>
+				<tr style="background-color: #708090;"> 
+					<td style="text-align: center;">Codigo</td>
+					<td style="text-align: center;">nome</td>
+					<td style="text-align: center;">Descricao</td>
+					<td style="text-align: center;">Data de Lancamento</td>
+					<td style="text-align: center;">Classificao de Idade</td>
+					<td style="text-align: center;">Preco</td>
+					
+								
+				</tr>
+				</tfoot>
+				
+			</TABLE>
+				</div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
